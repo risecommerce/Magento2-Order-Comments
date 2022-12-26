@@ -1,0 +1,12 @@
+{
+    "quote": {
+        "column": {
+            "risecommerce_order_comments": true
+        }
+    },
+    "sales_order": {
+        "column": {
+            "risecommerce_order_comments": true
+        }
+    }
+}

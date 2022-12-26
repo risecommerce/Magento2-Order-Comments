@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="order_tab_info">
+                <referenceContainer name="order_additional_info">
+                    <block class="Magento\Sales\Block\Adminhtml\Order\View" name="order.comments" template="Risecommerce_OrderComments::order/view/comments.phtml" />
+                </referenceContainer>
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>

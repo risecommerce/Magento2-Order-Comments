@@ -1,0 +1,19 @@
+<?php if (!empty($block->getOrder()->getRisecommerceOrderComments())) {
+    ?>
+    <section class="admin__page-section">
+        <div class="admin__page-section-title">
+        <span class="title"><?= /* @noEscape */ __('Order Comments') ?></span>
+        </div>
+        <div class="admin__page-section-content">
+            <div class="admin__page-section-item">
+                <div class="admin__page-section-item-content">
+                    <div class="order-payment-method-title risecommerce-order-comments-box" id="order-comments-label-div">
+                    <span><?= $block->escapeHtml(nl2br($block->getOrder()->getRisecommerceOrderComments())); ?></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php
+}
+?>

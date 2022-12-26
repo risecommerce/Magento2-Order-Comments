@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="risecommerce" translate="label" sortOrder="500">
+            <label>Risecommerce</label>
+        </tab>
+        <section id="risecommerce_order_comments" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Order Comments</label>
+            <!-- Assign section to tab -->
+            <tab>risecommerce</tab>
+            <resource>Risecommerce_OrderComments::config_order_comments</resource>
+            <!-- create group for fields in section -->
+            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <!-- create text type field -->
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Order Comments</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
